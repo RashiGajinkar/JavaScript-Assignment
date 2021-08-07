@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <form action="example/submit.html">
+        Name: <input type="text" name="value">
+        City: <input type="text" name="city">
+        <button type="submit">ADD</button>
+      </form>
+      <script>
+        var form = document.querySelector("form");
+        form.addEventListener("submit", function(event) {
+          console.log("The name is", form.elements.value.value);
+          event.preventDefault();
+        });
+        var form = document.querySelector("form");
+        form.addEventListener("submit", function(event) {
+          console.log("The city is", form.elements.city.value);
+          event.preventDefault();
+        });
+      </script>
+</body>
+</html>
